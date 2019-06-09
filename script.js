@@ -110,30 +110,3 @@ function resetCalculator() {
     calculator.operator = null;
     calculator.waitingForSecondOperand = false;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
