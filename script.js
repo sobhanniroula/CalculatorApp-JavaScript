@@ -53,9 +53,14 @@ function inputNumber(num) {
 
 // Handling decimal
 function inputDecimal(dot) {
-    // check if decimal already exists or not
-    if (!calculator.displayValue.includes(dot)) {
-        calculator.displayValue += dot;
+    if (calculator.waitingForSecondOperand === true) {
+        return;
+    } else {
+        // check if decimal already exists or not
+        if (!calculator.displayValue.includes(dot)) {
+            // Append the decimal point
+            calculator.displayValue += dot;
+        }
     }
 }
 
